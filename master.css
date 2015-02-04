@@ -1,0 +1,292 @@
+﻿/*-- General --*/
+
+body {
+    background: #000800;    
+    width: 770px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+img {
+    background-color: #000200;
+    padding: 2px;
+    border: 5px solid #102010; /* #151915 */
+}
+    
+h1, h2, h3, p {
+    font-family: High Tower Text, Times New Roman, Serif;
+    color: #baddbb;         /* #baddbb #0b2817 */
+    font-weight: normal;
+    cursor: default;
+    margin: 15px auto;
+    font-style: normal;
+   /* background-color: #111111;*/
+}
+
+h1 {
+    font-size: 26px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+p {
+    font-size: 18px;
+    text-align: center;
+    padding: 8px 150px;
+}
+
+a {
+    outline: none;
+    text-decoration: none;  
+    font-family: High Tower Text, Times New Roman, Serif;
+    font-size: 22px;
+    color: #cbf4d7;
+    cursor: pointer;
+}
+
+ul {   
+    list-style-type: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/*-- Specific --*/
+
+.vert_center_container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: table;
+    margin: 0 auto;
+}
+
+.vert_center_content {
+    display: table-cell;
+    vertical-align: middle;
+    width: 770px;
+    margin: 0 auto;
+    background: #000200;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.banner {
+    /*float: left;*/
+    width: 770px;
+    height: 225px;
+    background: url(photos/wide/banner_top.png);
+    /*border: 1px solid #102010;
+   /*
+ background: url(photos/wide/IMG_0357dark.png);    /*#cbf4d7;*/
+}
+
+.menu {
+    float: left;
+    display: block;
+    padding: 10px 0;
+    margin: 0 auto;
+    width: 770px;
+    background: url(photos/wide/banner_bottom.png);
+    height: 80px;
+    border: solid red hidden;
+}
+
+.menu li {
+    display: inline-block;
+    border: solid blue hidden;
+    height: 80px;
+}
+
+.menu a {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: 0 15px;
+}
+
+#tera:hover, #yoru:hover, #miya:hover, #sei:hover, #mori:hover, #shin:hover, #shi:hover {background-position: right;}
+#tera {background: url(buttons/tera.png);}
+#yoru {background: url(buttons/yoru.png);}
+#miya {background: url(buttons/miya.png);}
+#sei {background: url(buttons/sei.png);}
+#mori {background: url(buttons/mori.png);}
+#shin {background: url(buttons/shin.png);}
+#shi {background: url(buttons/shi.png);}
+
+.menu a:hover span 
+{
+    visibility: visible;
+}
+
+.content {
+    display: block;
+    height: 100%;    
+    width: 770px;
+    margin: 0px auto;
+    position: absolute;
+    text-align: center;
+    background-color: #000200;
+    min-height: 925px;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+}
+
+#frontpage {
+    min-height: 500px;
+}
+
+#intro 
+{
+    position: absolute;
+    width:100%;
+    margin-top: 120px;
+}
+
+#intro h1 {
+    margin: 2px 0;
+}
+
+#intro h2 {
+    margin: 2px 0 20px 0;
+}
+
+.footer 
+{
+    float: left;
+    position: fixed;
+    bottom:0;
+    height: 80px;
+    width: 770px;
+    background: url(photos/wide/footer2.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    z-index: 10;
+    padding-left: 5px;
+}
+
+.mousetext 
+{
+    font-family: High Tower Text, Times New Roman, Serif;
+    visibility: hidden;
+    position: fixed;
+    bottom: 15px;
+    left:0;
+    width:100%;
+    text-align: center;
+    font-size: 32px;
+    z-index: 15;
+}
+
+.gallery_positioner {
+    position: relative;
+    top: 100px;
+    width: 770px;
+}
+
+.gallery {
+    display: table;
+    width: 770px;
+    padding-top: 546px;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    background: none;
+    padding-bottom: 75px;
+}
+
+#newest {
+    padding-top: 300px;
+}
+
+.gallery li {
+    display: table-cell;
+    margin: 0 auto;
+}
+
+.gallery a {
+    display: block;
+    margin: 1px;
+    padding: 1px;
+    background: #102010;
+}
+
+.gallery a:hover {
+    background: #baddbb;
+    padding: 1px;
+    margin: 1px;
+}
+
+.gallery a.wall_icon {
+    position: absolute;
+    top: 80px;
+    left: 221px;
+    width: 325px;
+    height: 325px;
+    padding: 0;
+    cursor: default;
+}
+
+#miya_wall {background: url(buttons/miya_wall.png);}
+#tera_wall {background: url(buttons/tera_wall.png);}
+#empty_wall {background: url(buttons/empty_wall.png);}
+
+.gallery p.caption {
+    position: absolute;
+    top: 480px;
+    width: 470px; 
+}
+
+.justify {
+    text-align: justify;
+}
+
+.gallery a.button {
+    position: absolute;
+    margin: 0 20px;
+    padding: 0;
+    top: 505px;
+    width: 46px;
+    height: 25px;
+    display: block;
+}
+
+.gallery a.back {
+    background: url(buttons/mae.png);
+}
+
+.gallery a.forward {   
+    background: url(buttons/tsugi.png);
+    right: 0;
+}
+
+.gallery a.forward:hover, .gallery a.back:hover {
+    background-position: right;
+}
+
+.gallery a:hover img {
+    visibility: visible;
+}
+
+.thumbnail {
+    padding: 0;
+    border: none;
+    cursor: default;
+}
+
+.display {
+    position: absolute;
+    top: 0;
+    left: 28px;
+    visibility: hidden;
+}
+
+.vert {
+    left: 222px;
+}
+
